@@ -1,0 +1,100 @@
+/* Сброс стилей */
+* {
+    margin: 0;
+    padding: 15px;
+    box-sizing: border-box;
+}
+
+/* Основные стили для тела документа */
+body {
+    font-family: 'Roboto', sans-serif;
+    color: #f4f4f4; 
+    background: url('1.jpg') no-repeat center center fixed;
+    background-size: cover;
+    margin: 15px 55px;
+}
+
+/* Заголовок */
+.background h1 {
+    text-align: center;
+    font-size: 3em; /* Увеличенный размер шрифта заголовка */
+    font-family: 'Merriweather', serif; /* Шрифт для заголовка */
+    margin-bottom: 20px; /* Отступ снизу заголовка */
+    position: relative; /* Для выравнивания относительно псевдоэлемента */
+    z-index: 1; /* Заголовок выше фона */
+    text-transform: uppercase; /* Прописные буквы */
+}
+
+/* Контейнер для информации об учителе */
+.container {
+    display: flex;
+    align-items: center;
+    background: rgba(0, 0, 0, 0.6); /* Полупрозрачный черный фон */
+    padding: 40px; /* Внутренние отступы */
+    border-radius: 10px;
+    margin: 20px auto; /* Центрирование контейнера с отступами */
+    max-width: 1200px; /* Максимальная ширина контейнера */
+    z-index: 1; 
+}
+
+/* Информация об учителе */
+.teacher-info {
+    flex: 1;
+    margin-right: 30px; 
+}
+
+.teacher-info h2 {
+    margin-bottom: 15px;
+    font-size: 2.5em; /* Увеличенный размер шрифта заголовка */
+    font-family: 'Merriweather', serif; /* Шрифт для заголовка информации */
+}
+
+.teacher-info p {
+    line-height: 1.6; /* Межстрочный интервал для улучшения читаемости */
+    font-size: 1.5em; /* Увеличенный размер шрифта для основного текста */
+}
+
+/* Фото учителя */
+.teacher-image {
+    flex: 0 0 450px; /* Увеличенная ширина для фото */
+    height: 450px; /* Увеличенная высота для круглой формы */
+    border-radius: 50%; /* Полностью круглые края */
+    overflow: hidden;
+    display: flex; /* Использовать flex для центрирования изображения */
+    justify-content: center; /* Центрировать по горизонтали */
+    align-items: center; /* Центрировать по вертикали */
+}
+
+.teacher-image img {
+    width: 100%;
+    height: auto; /* Сохранение пропорций */
+    border-radius: 50%; /* Также для изображения, чтобы оно стало круглым */
+}
+
+/* Футер */
+footer {
+    margin-top: 30px;
+    text-align: center;
+}
+
+footer p {
+    margin-bottom: 10px; /* Отступ между текстом и ссылками */
+    font-size: 1.2em; /* Увеличенный размер шрифта */
+}
+
+/* Кнопки */
+.cta-button {
+    display: inline-block;
+    background: #7B001C; /* Красный цвет киновари */
+    color: white;
+    padding: 12px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    margin-top: 10px;
+    font-size: 1.5em; /* Увеличенный размер шрифта для кнопок */
+    transition: background 0.3s; /* Плавный переход цвета фона */
+}
+
+.cta-button:hover {
+    background: #6c001a; /* Более темный цвет при наведении */
+}
