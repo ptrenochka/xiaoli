@@ -168,52 +168,79 @@ body {
     height: auto; /* Поддержание пропорций изображения */
 }
 
+.technologies {
+    width: 85%;
+    background-color: #fffefe88; 
+    padding: 2rem; 
+    border-radius: 1rem;
+}
+
+.tech-cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(350px, 1fr)); /* Автоматически заполняет колонки */
+    grid-gap: 1rem; /* Промежутки между элементами */
+    width: 100%; /* Используйте 100% ширины родителя */
+    margin: 0 auto; /* Центрирование контейнера */
+}
+
+.tech-card {
+    display: flex;
+    flex-direction: column; /* Вертикальное расположение элементов */
+    align-items: center;
+    justify-content: center;
+    box-sizing: border-box;
+    border-radius: 1rem;
+    text-align: center;
+    background-color: #6c001a;
+    color: black; /* Цвет текста */
+    padding: 1rem; /* Отступы внутри карточек */
+    transition: transform 0.3s; /* Плавный эффект при наведении */
+}
+
+.tech-card:hover {
+    transform: translateY(-5px); /* Подъем карточки при наведении */
+}
+
+
+
+
+.tech-cards img{
+    size: 80%;
+}
+
+.tech-cards h3 {
+    font-size: 1em;
+    margin: 0;
+    font-family: 'Merriweather', serif;
+    color: black;
+}
+
+.technologies h2 {
+    text-align: center;
+    font-size: 2em;
+    font-family: 'Merriweather', serif; /* Шрифт для заголовка */
+    margin-bottom: 0.1em;
+    color: black;
+}
+
 /* Медиазапросы для адаптивности */
-@media (max-width: 768px) {
-    .lesson-option {
-        flex: 0 0 90%; /* Ширина блока на мобильных устройствах */
+@media (max-width: 800px) {
+    .tech-cards {
+        grid-template-columns: repeat(2, 1fr); /* Две карточки в строке для экранов шириной до 800px */
     }
     .container{
         display: flex;
         flex-direction: column-reverse;
         flex: 0 0 90%;
-
-    }
+        }
 }
 
-@media (max-width: 425px) {
-    .lesson-option {
-        flex: 0 0 90%; /* Ширина блока на мобильных устройствах */
-    }
-    .container{
-        display: flex;
-        flex-direction: column-reverse;
-        flex: 0 0 90%;
-        width: 100%;
-    }
-}
-
-@media (max-width: 375px) {
-    .lesson-option {
-        flex: 0 0 90%; /* Ширина блока на мобильных устройствах */
-    }
-    .container{
-        display: flex;
-        flex-direction: column-reverse;
-        flex: 0 0 90%;
-
+@media (max-width: 650px) {
+    .tech-cards {
+        grid-template-columns: 1fr; /* Одна карточка в строке для экранов шириной до 500px */
     }
 }
 
 
-@media (max-width: 320px) {
-    .lesson-option {
-        flex: 0 0 90%; /* Ширина блока на мобильных устройствах */
-    }
-    .container{
-        display: flex;
-        flex-direction: column-reverse;
-        flex: 0 0 90%;
 
-    }
-}
+
