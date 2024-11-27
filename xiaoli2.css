@@ -19,6 +19,15 @@ body {
 
 }
 
+h2{
+    text-align: center;
+    font-size: 2em;
+    font-family: 'Merriweather', serif; /* Шрифт для заголовка */
+    margin-bottom: 0.1em;
+    position: relative; /* Для выравнивания относительно псевдоэлемента */
+    z-index: 1; /* Заголовок выше фона */
+}
+
 /* Заголовок */
 .background h1 {
     text-align: center;
@@ -119,8 +128,9 @@ body {
     flex-wrap: wrap;
     justify-content: center; /* Центрирование элементов */
     margin: 0; /* Убираем отступы по бокам для выравнивания */
+    padding: 0;
     justify-content: space-between; /* Распределяет пространство между элементами */
-    gap: 1rem;
+    gap: 3rem;
 }
 
 .lessons h2 {
@@ -137,7 +147,7 @@ body {
     border-radius: 8px;
     padding: 1rem;
     text-align: center;
-    flex: 1 1 calc(33.333% - 2rem); /* Задает ширину 33.333% с отступами */
+    flex: 27%; /* Задает ширину 33.333% с отступами */
     margin: 0; 
 }
 
@@ -170,15 +180,15 @@ body {
 
 .technologies {
     width: 85%;
-    background-color: #fffefe88; 
+    background-color: #460b0ba5; 
     padding: 2rem; 
     border-radius: 1rem;
 }
 
 .tech-cards {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(350px, 1fr)); /* Автоматически заполняет колонки */
-    grid-gap: 1rem; /* Промежутки между элементами */
+    grid-template-columns: repeat(auto-fill, minmax(350px, 1fr)); 
+    grid-gap: 3rem; 
     width: 100%; /* Используйте 100% ширины родителя */
     margin: 0 auto; /* Центрирование контейнера */
 }
@@ -191,7 +201,7 @@ body {
     box-sizing: border-box;
     border-radius: 1rem;
     text-align: center;
-    background-color: #6c001a;
+    background-color: #f3edee;
     color: black; /* Цвет текста */
     padding: 1rem; /* Отступы внутри карточек */
     transition: transform 0.3s; /* Плавный эффект при наведении */
@@ -220,7 +230,7 @@ body {
     font-size: 2em;
     font-family: 'Merriweather', serif; /* Шрифт для заголовка */
     margin-bottom: 0.1em;
-    color: black;
+    color: white;
 }
 
 /* Медиазапросы для адаптивности */
