@@ -174,7 +174,7 @@ h2{
 }
 
 .lesson-option img {
-    max-width: 100%; /* Изображение растягивается на всю ширину контейнера */
+    max-width: 100%; 
     height: auto; /* Поддержание пропорций изображения */
 }
 
@@ -189,19 +189,20 @@ h2{
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(350px, 1fr)); 
     grid-gap: 3rem; 
-    width: 100%; /* Используйте 100% ширины родителя */
+    width: 100%; /*100% ширины родителя */
     margin: 0 auto; /* Центрирование контейнера */
+    padding: 0;
 }
 
 .tech-card {
     display: flex;
-    flex-direction: column; /* Вертикальное расположение элементов */
+    flex-direction: row;
     align-items: center;
     justify-content: center;
     box-sizing: border-box;
     border-radius: 1rem;
     text-align: center;
-    background-color: #f3edee;
+    background-color: #c0bbbc;
     color: black; /* Цвет текста */
     padding: 1rem; /* Отступы внутри карточек */
     transition: transform 0.3s; /* Плавный эффект при наведении */
@@ -247,9 +248,13 @@ h2{
 
 @media (max-width: 650px) {
     .tech-cards {
-        grid-template-columns: 1fr; /* Одна карточка в строке для экранов шириной до 500px */
+        grid-template-columns: 1fr; /* Одна карточка в строке для экранов шириной до 650px */
     }
+    .tech-card {
+        display: flex;
+        flex-direction: column;}
 }
+
 
 
 
