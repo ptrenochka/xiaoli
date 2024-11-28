@@ -89,7 +89,6 @@ h2{
 
 .teacher-image img {
     width: 100%;
-    
     height: auto; /* Сохранение пропорций */
     border-radius: 50%; /* Также для изображения, чтобы оно стало круглым */
 }
@@ -192,6 +191,7 @@ h2{
     width: 100%; /*100% ширины родителя */
     margin: 0 auto; /* Центрирование контейнера */
     padding: 0;
+    position: relative;
 }
 
 .tech-card {
@@ -206,6 +206,7 @@ h2{
     color: black; /* Цвет текста */
     padding: 1rem; /* Отступы внутри карточек */
     transition: transform 0.3s; /* Плавный эффект при наведении */
+    position: relative;
 }
 
 .tech-card:hover {
@@ -213,7 +214,9 @@ h2{
 }
 
 
-
+.tech-cards p{
+    size: 15%;
+}
 
 .tech-cards img{
     size: 80%;
@@ -231,7 +234,7 @@ h2{
     font-size: 2em;
     font-family: 'Merriweather', serif; /* Шрифт для заголовка */
     margin-bottom: 0.1em;
-    color: white;
+    color: #c0bbbc;
 }
 
 /* Медиазапросы для адаптивности */
