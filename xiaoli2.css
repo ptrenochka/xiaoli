@@ -148,6 +148,10 @@ h2{
     text-align: center;
     flex: 27%; /* Задает ширину 33.333% с отступами */
     margin: 0; 
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Выравниваем элементы по центру по горизонтали */
+    justify-content: center; 
 }
 
 .lesson-option:hover {
@@ -159,6 +163,7 @@ h2{
     margin: 0;
     font-family: 'Merriweather', serif;
     margin-bottom: 1rem; 
+    text-align: center;
 }
 
 .lesson-option p {
@@ -166,11 +171,12 @@ h2{
     font-size: 1.3em;
     margin:auto;
     margin-bottom: 1rem; 
+    text-align: center;
 }
 
 .lesson-image {
-    display: flex;
-    justify-content: center;
+    width: 100%; /* Изображение занимает всю доступную ширину */
+    height: auto;
     margin-bottom: 1rem; 
 }
 
