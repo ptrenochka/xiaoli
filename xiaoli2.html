@@ -8,8 +8,23 @@
     <link rel="stylesheet" href="xiaoli2.css">
 </head>
 <body>
-    
-    <div>
+     <!-- Меню навигации -->
+     <header class="header">
+        <div class="logo">
+            <span>你好</span>
+        </div>
+        <nav class="nav">
+            <ul>
+                <li><a href="#background">Обо мне</a></li>
+                <li><a href="#lessons">Уроки</a></li>
+                <li><a href="#technologies-section">Преимущества</a></li>
+            </ul>
+        </nav>
+        <div class="burger">
+            <span></span>
+        </div>
+    </header>
+    <section id="background">
         <div class="background">
             <h1>你好! Я Лиза — учитель китайского языка</h1>
             <div class="container">
@@ -25,70 +40,79 @@
                 </div>
             </div>
         </div>
-        <br>    
-        <div class="lessons">
-            <h2>Записаться на занятие</h2>
-            <div class="container1">
-                <div class="lesson-options">
-                    <div class="lesson-option">
-                        <h3>Индивидуальные занятия онлайн</h3>
-                        <div class="lesson-image">
-                            <img src="4.jpg" alt="Лиза" />
-                        </div>
-                        <p>Гибкий график и доступные цены</p>
-                        <a href="#" class="cta-button">Записаться</a>
+    </section>
+    <br>    
+    <section id="lessons">
+        <h2>Записаться на занятие</h2>
+        <div class="container1">
+            <div class="lesson-options">
+                <div class="lesson-option">
+                    <h3>Индивидуальные занятия онлайн</h3>
+                    <div class="lesson-image">
+                        <img src="4.jpg" alt="Лиза" />
                     </div>
-                    <div class="lesson-option">
-                        <h3>Индивидуальные занятия</h3>
-                        <div class="lesson-image">
-                            <img src="2.jpg" alt="Лиза" />
-                        </div>
-                        <p>Персонализированный подход</p>
-                        <a href="#" class="cta-button">Записаться</a>
+                    <p>Гибкий график и доступные цены</p>
+                    <a href="https://docs.google.com/forms/d/e/1FAIpQLScehg2IcpYr310m5rHfhBoN5_e8EZF5qk0a9QaV5PQuZjMmHQ/viewform?usp=header" 
+                       class="cta-button" 
+                       target="_blank">Записаться</a>
+                </div>
+                <div class="lesson-option">
+                    <h3>Индивидуальные занятия</h3>
+                    <div class="lesson-image">
+                        <img src="2.jpg" alt="Лиза" />
                     </div>
-                    <div class="lesson-option">
-                        <h3>Групповые очные занятия</h3>
-                        <div class="lesson-image">
-                            <img src="3.jpg" alt="Лиза" />
-                        </div>
-                        <p>Практика в компании единомышленников</p>
-                        <a href="#" class="cta-button">Записаться</a>
+                    <p>Персонализированный подход</p>
+                    <a href="https://docs.google.com/forms/d/e/1FAIpQLScehg2IcpYr310m5rHfhBoN5_e8EZF5qk0a9QaV5PQuZjMmHQ/viewform?usp=header" 
+                       class="cta-button" 
+                       target="_blank">Записаться</a>
+                </div>
+                <div class="lesson-option">
+                    <h3>Групповые очные занятия</h3>
+                    <div class="lesson-image">
+                        <img src="3.jpg" alt="Лиза" />
                     </div>
+                    <p>Практика в компании единомышленников</p>
+                    <a href="https://docs.google.com/forms/d/e/1FAIpQLScehg2IcpYr310m5rHfhBoN5_e8EZF5qk0a9QaV5PQuZjMmHQ/viewform?usp=header" 
+                       class="cta-button" 
+                       target="_blank">Записаться</a>
                 </div>
             </div>
         </div>
-    </div>
+    </section>
+    
     <br>
-    <div class="technologies-section">
+    <section id="technologies-section" class="technologies-section">
         <h2>Что вы получите, выбрав меня</h2><br>
-        <div class="technologies">
-            <div class="tech-cards">
-                <div class="tech-card">
-                    <img src="./icon/1.png" alt="Онлайн-платформы" />
-                    <h3>Индивидуальный подход к обучению</h3>
+            <div class="technologies">
+                <div class="tech-cards">
+                    <div class="tech-card">
+                        <img src="./icon/1.png" alt="Онлайн-платформы" />
+                        <h3>Индивидуальный подход к обучению</h3>
+                    </div>
+                    <div class="tech-card">
+                        <img src="./icon/2.png" alt="Учебные материалы" />
+                        <h3>Доступ к современным онлайн-платформам</h3>
+                    </div>
+                    <div class="tech-card">
+                        <img src="./icon/3.png" alt="Интерактивные материалы" />
+                        <h3>Интерактивные учебные материалы</h3>
+                    </div>
+                    <div class="tech-card">
+                        <img src="./icon/4.png" alt="Поддержка" />
+                        <h3>Поддержка вне занятий</h3>
+                    </div>
+                    <div class="tech-card">
+                        <img src="./icon/5.png" alt="Мобильные приложения" />
+                        <h3>Использование современных приложений</h3>
+                    </div>
+                    <div class="tech-card">
+                        <img src="./icon/6.png" alt="Обратная связь" />
+                        <h3>Регулярная обратная связь</h3>
+                    </div>
                 </div>
-                <div class="tech-card">
-                    <img src="./icon/2.png" alt="Учебные материалы" />
-                    <h3>Доступ к современным онлайн-платформам</h3>
-                </div>
-                <div class="tech-card">
-                    <img src="./icon/3.png" alt="Интерактивные материалы" />
-                    <h3>Интерактивные учебные материалы</h3>
-                </div>
-                <div class="tech-card">
-                    <img src="./icon/4.png" alt="Поддержка" />
-                    <h3>Поддержка вне занятий</h3>
-                </div>
-                <div class="tech-card">
-                    <img src="./icon/5.png" alt="Мобильные приложения" />
-                    <h3>Использование современных приложений</h3>
-                </div>
-                <div class="tech-card">
-                    <img src="./icon/6.png" alt="Обратная связь" />
-                    <h3>Регулярная обратная связь</h3>
-                </div>
-            </div>
-        </div>
-    </div>
+            </div>       
+    </section>
+    
+    <script src="script.js"></script>
 </body>
 </html>
