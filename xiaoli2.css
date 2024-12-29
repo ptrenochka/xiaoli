@@ -405,7 +405,7 @@ h2{
 }
 
 .review p {
-    font-size: 2.4rem;
+    font-size: 2.7rem;
     color: white;
     margin-bottom: 10px;
 }
@@ -426,6 +426,7 @@ h2{
 @media (min-width: 768px) {
     .reviews-list {
         grid-template-columns: 1fr 1fr; /* для больших экранов два столбца */
+        width: 90%;
     }
 }
 
